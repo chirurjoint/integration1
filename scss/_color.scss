@@ -1,0 +1,37 @@
+@mixin alert_content{
+  .alert{
+    padding:1%;
+    display: flex;
+    flex-direction: row;
+    &>p{
+      margin-left:2%;
+    }
+  }
+}
+
+@mixin color($couleur){
+  background-color: $couleur;
+}
+
+@mixin alert_color($color_danger,$color_info,$color_success,$color_info,$color_warning){
+
+  .alert-success{
+    @include color($color_success);
+  }
+  .alert-warning{
+    @include color($color_warning);
+  }
+
+  .alert-danger{
+    @include  color($color_danger);
+  }
+  .alert-info{
+    @include color($color_info);
+  }
+}
+
+@mixin alert{
+  @include alert_content;
+  @include alert_color($color_danger,$color_info,$color_success,$color_info,$color_warning);
+}
+

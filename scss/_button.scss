@@ -1,0 +1,48 @@
+$lh:50px;
+$sh:50px;
+$mh:50px;
+$lw:250px;
+$sw:150px;
+$mw:200px;
+$background_button: cyan;
+$border: red solid 1px;
+
+@mixin size{
+    &.large {
+      height: $lh;
+      width: $lw;
+    }
+    &.medium {
+      height: $mh;
+      width: $mw;
+    }
+
+    &.small {
+      height: $sh;
+      width: $sw;
+    }
+}
+
+@mixin style{
+    &.flat{
+      border:none;
+      padding:6px 0 6px 0;
+      border-radius:8px;
+      background:#d34836;
+      font:bold 13px Arial;
+      color:#fff;
+    }
+    &.outline{
+      background-color: white;
+      border-radius:8px;
+      border: $border;
+    }
+}
+@mixin button {
+    @include style;
+    @include size;
+}
+button{
+  @include button
+}
+
