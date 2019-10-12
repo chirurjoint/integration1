@@ -5,7 +5,14 @@ $lw:250px;
 $sw:150px;
 $mw:200px;
 $background_button: cyan;
-$border: red solid 1px;
+$flat_border:none;
+$flat_padding:6px 0 6px 0;
+$flat_border_radius:8px;
+$flat_font:bold 13px Arial;
+$flat_color:#fff;
+$_outline_border: red solid 1px;
+$outline_color:white;
+$outline_border_radius:8px;
 
 @mixin size{
     &.large {
@@ -25,17 +32,17 @@ $border: red solid 1px;
 
 @mixin style{
     &.flat{
-      border:none;
-      padding:6px 0 6px 0;
-      border-radius:8px;
+      border:$flat_border;
+      padding:$flat_padding;
+      border-radius:$flat_border_radius;
       background:#d34836;
-      font:bold 13px Arial;
-      color:#fff;
+      font: $flat_font;
+      color:$flat_color;
     }
     &.outline{
-      background-color: white;
-      border-radius:8px;
-      border: $border;
+      background-color: $outline_color;
+      border-radius: $outline_border_radius;
+      border: $_outline_border;
     }
 }
 @mixin button {
