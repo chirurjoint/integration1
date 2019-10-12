@@ -1,10 +1,10 @@
 # integration1
 
-Pour avoir accès au framework il vous faudra télécharger le fichier td8.scss.
+Pour avoir accès au framework il vous faudra télécharger le dossier scss.
 
 Ensuite il vous faudra le placer dans votre projet.
 
-Par la suite il vous faudra creer un fichier css qui sera watch par le fichier sass.
+Par la suite il vous faudra creer un fichier css qui sera watch par le fichier sass td8.scss qui se trouve dans le dossier scss.
 
 Une fois le fichier css créer lancer la commande sass --watch chemin/fichier.scss:chemin/fichier.css
 
