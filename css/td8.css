@@ -52,7 +52,7 @@ body {
       body nav > ul > li {
         text-align: center;
         border: antiquewhite solid 2px;
-        height: 10vh;
+        height: 8vh;
         flex: content-box; }
         body nav > ul > li > a {
           color: white;
@@ -62,55 +62,29 @@ body {
         vertical-align: center;
         flex-direction: row; }
         body nav > ul > li {
-          background: chocolate;
           text-align: center;
           flex: content-box;
           border: none;
           flex-grow: 1;
           height: 10vh; } }
     @media (min-width: 1000px) {
-      body nav {
-        background: chocolate; }
-        body nav > ul {
-          justify-content: flex-end; }
-          body nav > ul li {
-            background: chocolate;
-            padding-left: 5%;
-            flex: content-box;
-            border: none;
-            height: 10vh;
-            flex-grow: 0; }
-        body nav ul:nth-last-child(1) {
-          padding-right: 5%; } }
-
-.s12 {
-  width: 120%;
-  justify-content: space-between;
-  padding: 0.25%;
-  margin: 0.25%;
-  background-color: #d348312;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto; }
-
-.s11 {
-  width: 110%;
-  justify-content: space-between;
-  padding: 0.25%;
-  margin: 0.25%;
-  background-color: #d348311;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto; }
+      body nav > ul {
+        justify-content: flex-end; }
+        body nav > ul li {
+          padding-left: 5%;
+          flex: content-box;
+          border: none;
+          height: 10vh;
+          flex-grow: 0; }
+      body nav ul:nth-last-child(1) {
+        padding-right: 5%; } }
 
 .s10 {
   width: 100%;
   justify-content: space-between;
   padding: 0.25%;
   margin: 0.25%;
-  background-color: #d348310;
+  background-color: #d34836;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -121,7 +95,7 @@ body {
   justify-content: space-between;
   padding: 0.25%;
   margin: 0.25%;
-  background-color: #d34839;
+  background-color: #d34836;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -132,7 +106,7 @@ body {
   justify-content: space-between;
   padding: 0.25%;
   margin: 0.25%;
-  background-color: #d34838;
+  background-color: #d34836;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -143,7 +117,7 @@ body {
   justify-content: space-between;
   padding: 0.25%;
   margin: 0.25%;
-  background-color: #d34837;
+  background-color: #d34836;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -165,7 +139,7 @@ body {
   justify-content: space-between;
   padding: 0.25%;
   margin: 0.25%;
-  background-color: #d34835;
+  background-color: #d34836;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -176,7 +150,7 @@ body {
   justify-content: space-between;
   padding: 0.25%;
   margin: 0.25%;
-  background-color: #d34834;
+  background-color: #d34836;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -187,7 +161,7 @@ body {
   justify-content: space-between;
   padding: 0.25%;
   margin: 0.25%;
-  background-color: #d34833;
+  background-color: #d34836;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -198,7 +172,7 @@ body {
   justify-content: space-between;
   padding: 0.25%;
   margin: 0.25%;
-  background-color: #d34832;
+  background-color: #d34836;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -209,7 +183,7 @@ body {
   justify-content: space-between;
   padding: 0.25%;
   margin: 0.25%;
-  background-color: #d34831;
+  background-color: #d34836;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;

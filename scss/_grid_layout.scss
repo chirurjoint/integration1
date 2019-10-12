@@ -1,9 +1,16 @@
 $taille_grid:10;
 $offsetS:0.25%;
 $offsetM:1%;
-
 $gutterS:0.25%;
 $gutterM:1%;
+$space: space-between;
+$display:flex;
+$column :column;
+$row:row;
+$bgr : darkgray;
+$bgc : dodgerblue;
+$widthc: 50%;
+$marginc: 1%;
 
 @mixin size($nbr_colonne,$total_colonne){
   $taille: (((  (100%/$total_colonne)) )*$nbr_colonne );
@@ -11,25 +18,24 @@ $gutterM:1%;
 }
 
 @mixin offsetS(){
-  justify-content: space-between;
+  justify-content: $space;
   padding: $offsetS;
   margin: $gutterS;
 }
 
 @mixin offsetM(){
-  justify-content: space-between;
+  justify-content: $space;
   padding: $offsetM;
   margin: $gutterM;
 }
 
 
-
 @mixin grid {
-  @for $i from 12 through 1 {
+  @for $i from $taille_grid through 1 {
     .s#{$i}{
       @include size($i,$taille_grid);
       @include offsetS;
-      background-color: #d3483#{$i};
+      background-color: #d34836;
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       -ms-hyphens: auto;
@@ -52,21 +58,21 @@ $gutterM:1%;
 
 @mixin row{
   .row{
-    display: flex;
-    flex-direction: row;
+    display: $display;
+    flex-direction: $row;
     margin:1%;
-    background-color: darkgray;
+    background-color: $bgr;
 
   }
 }
 
 @mixin col{
   .col{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin:1%;
-    background-color: dodgerblue;
+    display: $display;
+    flex-direction: $column;
+    width: $widthc;
+    margin:$marginc;
+    background-color: $bgc;
   }
 }
 
