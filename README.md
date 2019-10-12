@@ -12,7 +12,7 @@ Il va falloir aussi intégrer le fichier css dans le fichier HTML avec une balis
 
 Une fois ces étapes réalisées vous pouvez profiter du framework.
 
-# cacractéristiques des fichier et comment les modifiers:
+# cacractéristiques des fichiers et comment les modifiers:
 
 _button.scss : permet de paramettrer l'apparance des buttons, il est possible de les modifier en changeant les variables qui sont au dessus du fichier.
 
